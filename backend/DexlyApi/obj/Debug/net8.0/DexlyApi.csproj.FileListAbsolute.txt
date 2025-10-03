@@ -23,3 +23,14 @@ C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\refint\DexlyApi.dll
 C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\DexlyApi.pdb
 C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\DexlyApi.genruntimeconfig.cache
 C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\ref\DexlyApi.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\work\code\dexly\backend\DexlyApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\DexlyApi.csproj.AssemblyReference.cache
+C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\DexlyApi.sourcelink.json
+C:\work\code\dexly\backend\DexlyApi\obj\Debug\net8.0\DexlyApi.csproj.Up2Date
