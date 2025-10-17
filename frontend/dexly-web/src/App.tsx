@@ -1,3 +1,4 @@
+import { post } from './lib/api';
 import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import { LogOut } from "lucide-react";
@@ -34,7 +35,22 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
       isAuthenticated,
       async signIn(email: string, _password: string) {
         // TODO: reemplazar con auth real (SFMC / JWT). Por ahora valida formato email.
+        console.log('[signIn] start', { email, _password });
+
         if (!email.includes("@")) throw new Error("Ingrese un email válido");
+        console.log('[signIn] API_BASE =', import.meta.env?.VITE_API_BASE);
+
+        const data = await post<{ ok: boolean; client?: any; error?: string }>(
+          '/login',
+          { username: email, password: _password }
+        );
+
+        console.log('[signIn] response', data);
+
+        if (!data.ok || !data.client) {
+          throw new Error(data.error || 'Credenciales inválidas');
+        }
+
         localStorage.setItem("dexly_demo_authed", "1");
         setIsAuthenticated(true);
       },
@@ -202,7 +218,7 @@ function MainPage() {
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <tr key={i} className="border-b last:border-0 hover:bg-neutral-50">
                   <td className="truncate px-4 py-3">DE_Subscribers_{i}</td>
-                  <td className="px-4 py-3 tabular-nums">{(Math.random()*1_000_000).toFixed(0)}</td>
+                  <td className="px-4 py-3 tabular-nums">{(Math.random() * 1_000_000).toFixed(0)}</td>
                   <td className="px-4 py-3">2025-09-2{i} 12:{i}3</td>
                   <td className="px-4 py-3">marketing-team</td>
                 </tr>
@@ -263,4 +279,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-

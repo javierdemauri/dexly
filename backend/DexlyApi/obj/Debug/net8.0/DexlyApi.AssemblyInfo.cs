@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DexlyApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a95fc5acc57a9b55af9d50b5e2b64bb26c6820ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38ddf1453373737e84d9396a14af032052dcdd6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DexlyApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DexlyApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
